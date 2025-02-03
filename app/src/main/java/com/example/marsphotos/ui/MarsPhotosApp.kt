@@ -47,7 +47,7 @@ fun MarsPhotosApp() {
             modifier = Modifier.fillMaxSize()
         ) {
             val marsViewModel: MarsViewModel =
-                viewModel(factory = MarsViewModel.Factory)
+                viewModel()
             HomeScreen(
                 marsUiState = marsViewModel.marsUiState,
                 contentPadding = it
